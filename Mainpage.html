@@ -6,37 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>세계의 레시피</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        font-size: 14px;
+      }
       .menu {
+        width: 800px;
+        overflow: hidden;
+        margin: 150px auto;
+      }
+
+      .menu > li {
+        width: 20%; /*20*5=100%*/
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        background-color: #5778ff;
+      }
+
+      .menu a {
+        color: #fff;
+      }
+
+      .submenu > li {
+        line-height: 50px;
+        background-color: #94a9ff;
+      }
+
+      .submenu {
+        height: 0; /*ul의 높이를 안보이게 처리*/
+        overflow: hidden;
+      }
+
+      .menu > li:hover {
+        background-color: #94a9ff;
+        transition-duration: 0.5s;
+      }
+
+      .menu > li:hover .submenu {
+        height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+        transition-duration: 1s;
       }
     </style>
   </head>
   <body>
-    <a href=""
-      ><img
-        src="./image/bowl-food-solid.svg"
-        alt="웹 페이지 표시 문구"
-        width="50px"
-        height="50px"
-    /></a>
+    <section>
+      <!-- 로고 -->
+      <a href=""
+        ><img
+          src="./image/bowl-food-solid.svg"
+          alt="웹 페이지 표시 문구"
+          width="50px"
+          height="50px"
+      /></a>
+      <h1>세계의 레시피</h1>
 
-    <ul class="menu">
-      <li>
-        <a href="Korea.html">국내</a>
-        <ul>
-          <li>서울</li>
-          <li>인천</li>
-          <li>대전</li>
-          <li>대구</li>
-          <li>울산</li>
-          <li>부산</li>
-          <li>광주</li>
-          <li>세종</li>
-          <li>제주</li>
-        </ul>
-      </li>
-      <li><a href="Outside.html">국외</a></li>
-      <li><a href="Fusion.html">퓨전</a></li>
-      <li><a href="Community.html">커뮤니티</a></li>
-    </ul>
+      <!-- 메뉴창 -->
+      <ul class="menu">
+        <li>
+          <a href="Korea.html">국내요리</a>
+          <ul>
+            <li><a href="./seoul.html"></a> 서울</li>
+            <li>인천</li>
+            <li>대전</li>
+            <li>대구</li>
+            <li>울산</li>
+            <li>부산</li>
+            <li>광주</li>
+            <li>세종</li>
+            <li>제주</li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="Outside.html">국외요리</a>
+          <ul>
+            <li>미국</li>
+            <li>일본</li>
+            <li>중국</li>
+            <li>러시아</li>
+            <li>독일</li>
+            <li>이탈리아</li>
+            <li>프랑스</li>
+            <li>인도네시아</li>
+            <li>베트남</li>
+          </ul>
+        </li>
+
+        <li><a href="Fusion.html">퓨전요리</a></li>
+
+        <li>
+          <a href="Community.html">커뮤니티</a>
+          <ul>
+            <li>자유게시판</li>
+            <li>요리게시판</li>
+            <li>식재료게시판</li>
+            <li>버그문의</li>
+          </ul>
+        </li>
+      </ul>
+
+      <img src="" alt="메인화면 큰 그림" />
+    </section>
+
+    <!-- 첫번째 글 -->
+    <div>
+      아직도 <br />
+      배달음식에 <br />
+      의존하고 계신가요?
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iste
+      deserunt velit iure rerum? Nihil vero, facere fugit aperiam et reiciendis
+      autem in amet minus, quo odit odio, animi eaque.
+    </div>
+    <img src="" alt="배달음식에 의존하고 계신가요" />
+
+    <!-- 두번째 글 -->
+    <div>어떻게 만들지 모르겠어요</div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cupiditate
+      laborum amet quam maiores dolore ducimus ut minima et! Ducimus nisi
+      laboriosam, quia accusantium aliquam repellat earum. Consequatur, mollitia
+      sint.
+    </div>
+    <img src="" alt="어떻게 만들지 모르겠어요" />
+
+    <!-- 세번째 글 -->
+    <div>괜찮습니다</div>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dolore
+      harum officiis inventore voluptatum? Quis, molestiae aperiam ea earum ab
+      nam odit perspiciatis suscipit. Voluptate, in suscipit. Tenetur, deleniti
+      fugit!
+    </div>
+    <img src="" alt="괜찮습니다" />
+
+    <!-- 네번째 글 -->
+    <div>"세계의 레시피와 함께하세요</div>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti fuga
+      sapiente ducimus aperiam ut quis perferendis adipisci, cupiditate, aut
+      numquam, laborum eligendi praesentium omnis enim facere blanditiis eos.
+      Velit, incidunt?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Obcaecati, sit distinctio illum cupiditate, nesciunt quas eos, reiciendis
+      corrupti aspernatur consequatur unde adipisci. Voluptates minus quisquam
+      aspernatur nam magnam obcaecati eligendi?Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Vitae, tempora earum. Esse rerum molestiae
+      minima veniam tempore tempora quisquam qui similique, deserunt nihil sed
+      mollitia nemo ex cum repellat Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Corporis ipsa earum harum qui velit, modi ullam atque
+      facere consequatur dolor. Reiciendis eligendi, suscipit repellendus error
+      expedita temporibus voluptates esse Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Praesentium facere laudantium suscipit
+      dignissimos aliquid maiores nam eveniet ex exercitationem velit tenetur in
+      veritatis, architecto tempora inventore asperiores dolor reiciendis
+      laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Repellendus nostrum tempora tenetur odio accusamus corporis, assumenda
+      laudantium, repudiandae rerum quasi enim voluptates quisquam, doloremque
+      impedit aperiam ab labore alias pariatur. Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Ad voluptatum assumenda hic aspernatur, est
+      possimus deleniti consequatur architecto voluptatibus accusantium!
+      Possimus, natus. Ab consequatur aliquam maiores consectetur sed magnam
+      quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Voluptate, in autem nulla deleniti, aliquid tenetur quidem tempora
+      distinctio ratione a ipsam enim sed fugit deserunt recusandae quae, cumque
+      consectetur voluptatem? Lorem ipsum dolor, sit amet consectetur
+      adipisicing elit. Expedita vitae, natus quas sed accusamus totam,
+      voluptate eligendi repellendus tenetur officiis, explicabo doloribus
+      impedit cupiditate tempora ut vero. Laboriosam, incidunt quasi! Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Earum architecto
+      laudantium vitae quibusdam? Saepe, voluptates qui consequatur illo optio
+      natus eaque, officia soluta quo aut laboriosam numquam reiciendis! Quam,
+      consequatur!
+    </div>
+
+    <!-- 마지막 글과 이동 메뉴 -->
+    <img src="" alt="마지막 음식사진" />
+    <a href="./Korea.html">국내</a>
+    <a href="./Outside.html">국외</a>
+    <a href="./Fusion.html">퓨전</a>
+
+    <!-- Footer -->
+    <footer>
+      <ul>
+        <li><a href="./Companyintro.html">회사소개</a></li>
+        <li><a href="./howtouse.html">페이지이용안내</a></li>
+        <li><a href="./privacy.html">개인정보취급방침</a></li>
+        <li><a href="./service.html">고객센터</a></li>
+        <li><a href="./ad.html">광고문의</a></li>
+        <li><a href="./Recruitment.html">채용정보</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
